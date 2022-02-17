@@ -1,0 +1,15 @@
+wetende dat jij gaat vergete hoe git werkt
+
+ik ga beginnen met werken:
+1- open git terminal (git bash) in de project folder
+2- type: git pull
+3- ??
+4- profit
+
+
+ik ben klaar met werken:
+1- open git terminal(git bash) in de project folder
+2- type: "git --status" (hiermee zie je een lijst van alle aangepaste bestanden
+3- type: "git add ."   Hiermee add je alle bestanden
+4- type: "git commit -m 'vul hier comment in'" commiten van de bestanden
+5- type: "git push" om de bestanden de uploaden
