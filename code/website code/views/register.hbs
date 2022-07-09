@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Project 3/4, Bankoveral!</title>
+      <link rel="stylesheet" href="/bootstrap.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <link rel="stylesheet" href="/style.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <div class="wrapper">
+         <div class="title-text">
+            <div class="title signup">
+               Registreren
+            </div>
+         </div>
+         <div class="form-container">
+               <input type="radio" name="slide" id="signup">
+
+            <div class="form-inner">
+               <form action="/auth/register" method="POST" class="signup">
+                <div class="field">
+                    <input type="text" placeholder="Voornaam" class ="form-control" id="voornaam" name="voornaam" required>        
+                 </div>
+                 <div class="field"> 
+                    <input type="text" placeholder="Achternaam" class ="form-control" id="achternaam" name="achternaam" required>
+                 </div>
+                  <div class="field">
+                     <input type="text" placeholder="Email Address" class ="form-control" id="email" name="email" required>
+                  </div>
+                  <div class="field">
+                    <input type="date" placeholder="Geboorte datum" class ="form-control" id="geboorte_datum" name="geboorte_datum" required>
+                 </div>
+                  <div class="field">
+                     <input type="password" placeholder="Wachtwoord" class ="form-control" id="password" name="password" required>
+                  </div>
+                 
+                  <div class="field btn">
+                     <div class="btn-layer"></div>
+                     <input type="submit"  value="Registreren">
+                  </div>
+                  <div class="signup-link">
+                     Al een account?<a href="/login"> Login </a>
+                  </div>
+
+                  
+               </form>
+            </div>
+         </div>
+                  <div>
+                  {{#if message }}
+                     <h5 class="alert alert-danger mt-4">{{message}}</h5>
+                  {{/if}}
+                  </div> 
+      </div>
+   
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+   </body>
+</html>
